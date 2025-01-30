@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">QR App</string>
+    <string name="scan_result_placeholder">Scan result will appear here</string>
+    <string name="back_button">Back</string>
+    <string name="scanner_frame">Scanner frame overlay</string>
+</resources>

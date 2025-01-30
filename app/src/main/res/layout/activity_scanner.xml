@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ScannerActivity">
+
+    <!-- Scanner Preview Surface -->
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+
+    <!-- Scanner Frame (Optional) -->
+    <ImageView
+        android:id="@+id/iv_scanner_frame"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/scanner_frame"
+        android:contentDescription="@string/scanner_frame"/>
+
+    <!-- Scan Result TextView -->
+    <TextView
+        android:id="@+id/tv_scan_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="@string/scan_result_placeholder"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_back"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:contentDescription="@string/back_button"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"/>
+
+</RelativeLayout>
+
